@@ -33,7 +33,7 @@ static int auth_current_user(lua_State *L) {
         reply->resp = strdup(pass);
         reply->resp_retcode = 0;
 
-        retval = pam_authenticate(pamh, 0);    /* is user really user? */
+        retval = pam_authenticate(pamh, 0);
     }
 
     /* This is where we have been authorized or not. */
@@ -47,7 +47,7 @@ static int auth_current_user(lua_State *L) {
 
 
 static const struct luaL_Reg lua_pam[] = {
-        {"auth_current_user", auth_current_user}, /* names can be different */
+        {"auth_current_user", auth_current_user},
         {NULL, NULL}  /* sentinel */
 };
 

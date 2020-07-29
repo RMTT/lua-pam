@@ -8,6 +8,18 @@ cd build
 make
 ```
 
+## Installation through package manager
+
+### Arch Linux
+
+The package [`lua-pam-git`](https://aur.archlinux.org/packages/lua-pam-git/) can be installed from the Arch Linux User Repository using the following command. The command assumes your package manager is `yay`.
+
+```
+yay -S lua-pam-git
+```
+
+The file `liblua_pam.so` is installed into `/usr/lib/lua-pam/`.
+
 ## Usage
 ```lua
 -- add the lib to cpath by yourself
